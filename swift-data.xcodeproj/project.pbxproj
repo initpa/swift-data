@@ -16,6 +16,8 @@
 		C75160232C0DF17300F4392F /* swift_dataUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75160222C0DF17300F4392F /* swift_dataUITestsLaunchTests.swift */; };
 		C75160302C0DF28100F4392F /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = C751602F2C0DF28100F4392F /* Book.swift */; };
 		C75160322C0DF64100F4392F /* NewBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75160312C0DF64100F4392F /* NewBookView.swift */; };
+		C7D31C282C0E019000AB5F5E /* EditBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D31C272C0E019000AB5F5E /* EditBookView.swift */; };
+		C7D31C2A2C0E060500AB5F5E /* RatingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D31C292C0E060500AB5F5E /* RatingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		C75160222C0DF17300F4392F /* swift_dataUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift_dataUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C751602F2C0DF28100F4392F /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		C75160312C0DF64100F4392F /* NewBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewBookView.swift; sourceTree = "<group>"; };
+		C7D31C272C0E019000AB5F5E /* EditBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditBookView.swift; sourceTree = "<group>"; };
+		C7D31C292C0E060500AB5F5E /* RatingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,8 @@
 			children = (
 				C75160052C0DF17100F4392F /* swift_dataApp.swift */,
 				C75160072C0DF17100F4392F /* BookListView.swift */,
+				C7D31C272C0E019000AB5F5E /* EditBookView.swift */,
+				C7D31C292C0E060500AB5F5E /* RatingsView.swift */,
 				C75160312C0DF64100F4392F /* NewBookView.swift */,
 				C75160092C0DF17300F4392F /* Assets.xcassets */,
 				C751600B2C0DF17300F4392F /* Preview Content */,
@@ -264,6 +270,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C75160322C0DF64100F4392F /* NewBookView.swift in Sources */,
+				C7D31C2A2C0E060500AB5F5E /* RatingsView.swift in Sources */,
+				C7D31C282C0E019000AB5F5E /* EditBookView.swift in Sources */,
 				C75160082C0DF17100F4392F /* BookListView.swift in Sources */,
 				C75160062C0DF17100F4392F /* swift_dataApp.swift in Sources */,
 				C75160302C0DF28100F4392F /* Book.swift in Sources */,
