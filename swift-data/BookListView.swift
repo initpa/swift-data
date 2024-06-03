@@ -9,6 +9,7 @@ import SwiftUI
 import SwiftData
 
 struct BookListView: View {
+    @Environment(\.modelContext) private var context
     @Query(sort: \Book.title) private var books: [Book]
     @State private var createNewBook = false
     
@@ -42,24 +43,32 @@ struct BookListView: View {
                                 }
                             }
                         }
-                    }
-                    .listStyle(.plain)
-                    .padding()
-                    .navigationTitle("MyBooks")
-                    .toolbar{
-                        Button {
-                            createNewBook = true
-                        } label: {
-                            Image(systemName: "plus.circle.fill")
-                                .imageScale(.large)
+                        .onDelete{ indexSet in
+                            indexSet.forEach { index in
+                                let book = books[index]
+                                context.delete(book)
+                            }
                         }
                     }
-                    .sheet(isPresented: $createNewBook) {
-                        NewBookView()
-                            .presentationDetents([.medium])
-                    }
+                    
                 }
-            }                        
+                
+            }
+            .listStyle(.plain)
+            .padding()
+            .navigationTitle("MyBooks")
+            .toolbar{
+                Button {
+                    createNewBook = true
+                } label: {
+                    Image(systemName: "plus.circle.fill")
+                        .imageScale(.large)
+                }
+            }
+            .sheet(isPresented: $createNewBook) {
+                NewBookView()
+                    .presentationDetents([.medium])
+            }
         }
     }
 }
