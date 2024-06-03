@@ -14,6 +14,7 @@
 		C75160172C0DF17300F4392F /* swift_dataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75160162C0DF17300F4392F /* swift_dataTests.swift */; };
 		C75160212C0DF17300F4392F /* swift_dataUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75160202C0DF17300F4392F /* swift_dataUITests.swift */; };
 		C75160232C0DF17300F4392F /* swift_dataUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75160222C0DF17300F4392F /* swift_dataUITestsLaunchTests.swift */; };
+		C75160302C0DF28100F4392F /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = C751602F2C0DF28100F4392F /* Book.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		C751601C2C0DF17300F4392F /* swift-dataUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "swift-dataUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C75160202C0DF17300F4392F /* swift_dataUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift_dataUITests.swift; sourceTree = "<group>"; };
 		C75160222C0DF17300F4392F /* swift_dataUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift_dataUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C751602F2C0DF28100F4392F /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				C75160072C0DF17100F4392F /* ContentView.swift */,
 				C75160092C0DF17300F4392F /* Assets.xcassets */,
 				C751600B2C0DF17300F4392F /* Preview Content */,
+				C751602F2C0DF28100F4392F /* Book.swift */,
 			);
 			path = "swift-data";
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			files = (
 				C75160082C0DF17100F4392F /* ContentView.swift in Sources */,
 				C75160062C0DF17100F4392F /* swift_dataApp.swift in Sources */,
+				C75160302C0DF28100F4392F /* Book.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
