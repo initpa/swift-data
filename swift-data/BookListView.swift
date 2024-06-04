@@ -9,7 +9,7 @@ import SwiftUI
 import SwiftData
 
 enum SortOrder: String, Identifiable, CaseIterable {
-    case status, title, author    
+    case status, title, author
     var id: Self {
         self
     }
@@ -18,6 +18,7 @@ enum SortOrder: String, Identifiable, CaseIterable {
 struct BookListView: View {
     @State private var createNewBook = false
     @State private var sortOrder = SortOrder.status
+    @State private var filter = ""
     
     var body: some View {
         NavigationStack {
@@ -27,7 +28,8 @@ struct BookListView: View {
                 }
             }
             .buttonStyle(.bordered)
-            BookList(sortOrder: sortOrder)
+            BookList(sortOrder: sortOrder, filterString: filter)
+                .searchable(text: $filter, prompt: Text("filter on title or author"))
             .listStyle(.plain)
             .padding()
             .navigationTitle("MyBooks")
