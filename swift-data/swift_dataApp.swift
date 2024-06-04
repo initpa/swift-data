@@ -16,28 +16,25 @@ struct swift_dataApp: App {
         WindowGroup {
             BookListView()
         }
-//        .modelContainer(for: Book.self)
+        //        .modelContainer(for: Book.self)
         .modelContainer(container)
     }
     
     init() {
         let schema = Schema([Book.self])
-        let config = ModelConfiguration("Books", schema: schema)
+        let config = ModelConfiguration("MyBooks", schema: schema)
         do {
             container = try ModelContainer(for: schema, configurations: config)
         } catch {
-            fatalError("could not configure the container")
+            fatalError("Could not configure the container")
         }
-        
-        
-//        let config = ModelConfiguration(url: URL.documentsDirectory.appending(path: "MyBooks.store"))
-//        
-//        do {
-//            container = try ModelContainer(for: Book.self, configurations: config)
-//        } catch {
-//            fatalError("could not configure the container")
-//        }
-        
-        print(URL.documentsDirectory.path())
+        //        let config = ModelConfiguration(url: URL.documentsDirectory.appending(path: "MyBooks.store"))
+        //        do {
+        //            container = try ModelContainer(for: Book.self, configurations: config)
+        //        } catch {
+        //            fatalError("Could not configure the container")
+        //        }
+        print(URL.applicationSupportDirectory.path(percentEncoded: false))
+        //        print(URL.documentsDirectory.path())
     }
 }
