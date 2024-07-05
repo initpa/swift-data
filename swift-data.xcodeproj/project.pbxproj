@@ -19,8 +19,12 @@
 		C75714EB2C0EF3A8000CB56A /* BookList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75714EA2C0EF3A8000CB56A /* BookList.swift */; };
 		C7BB0BC02C346C6300E04801 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BB0BBF2C346C6300E04801 /* Quote.swift */; };
 		C7BB0BC22C35AE3D00E04801 /* QuotesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BB0BC12C35AE3D00E04801 /* QuotesListView.swift */; };
+		C7BB0BC42C370F4600E04801 /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BB0BC32C370F4600E04801 /* Genre.swift */; };
+		C7BB0BC62C37101900E04801 /* UIColor+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BB0BC52C37101900E04801 /* UIColor+Extention.swift */; };
+		C7BB0BC82C37106D00E04801 /* Color+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BB0BC72C37106D00E04801 /* Color+Extention.swift */; };
 		C7D31C282C0E019000AB5F5E /* EditBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D31C272C0E019000AB5F5E /* EditBookView.swift */; };
 		C7D31C2A2C0E060500AB5F5E /* RatingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D31C292C0E060500AB5F5E /* RatingsView.swift */; };
+		C7E08A662C385E4E00090227 /* GenereSamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E08A652C385E4E00090227 /* GenereSamples.swift */; };
 		C7E851AB2C0EDFF4004BA873 /* BookSamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E851AA2C0EDFF4004BA873 /* BookSamples.swift */; };
 		C7E851AD2C0EE158004BA873 /* PreviewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E851AC2C0EE158004BA873 /* PreviewContainer.swift */; };
 /* End PBXBuildFile section */
@@ -58,8 +62,12 @@
 		C75714EA2C0EF3A8000CB56A /* BookList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookList.swift; sourceTree = "<group>"; };
 		C7BB0BBF2C346C6300E04801 /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
 		C7BB0BC12C35AE3D00E04801 /* QuotesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesListView.swift; sourceTree = "<group>"; };
+		C7BB0BC32C370F4600E04801 /* Genre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Genre.swift; sourceTree = "<group>"; };
+		C7BB0BC52C37101900E04801 /* UIColor+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extention.swift"; sourceTree = "<group>"; };
+		C7BB0BC72C37106D00E04801 /* Color+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extention.swift"; sourceTree = "<group>"; };
 		C7D31C272C0E019000AB5F5E /* EditBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditBookView.swift; sourceTree = "<group>"; };
 		C7D31C292C0E060500AB5F5E /* RatingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingsView.swift; sourceTree = "<group>"; };
+		C7E08A652C385E4E00090227 /* GenereSamples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenereSamples.swift; sourceTree = "<group>"; };
 		C7E851AA2C0EDFF4004BA873 /* BookSamples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSamples.swift; sourceTree = "<group>"; };
 		C7E851AC2C0EE158004BA873 /* PreviewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -113,14 +121,11 @@
 			isa = PBXGroup;
 			children = (
 				C75160052C0DF17100F4392F /* swift_dataApp.swift */,
-				C7BB0BC12C35AE3D00E04801 /* QuotesListView.swift */,
-				C75160072C0DF17100F4392F /* BookListView.swift */,
-				C75714EA2C0EF3A8000CB56A /* BookList.swift */,
-				C7D31C272C0E019000AB5F5E /* EditBookView.swift */,
-				C7BB0BBF2C346C6300E04801 /* Quote.swift */,
-				C7D31C292C0E060500AB5F5E /* RatingsView.swift */,
-				C75160312C0DF64100F4392F /* NewBookView.swift */,
-				C751602F2C0DF28100F4392F /* Book.swift */,
+				C7E08A6A2C385FFE00090227 /* Quote */,
+				C7E08A672C385F9600090227 /* Book */,
+				C7E08A682C385FB200090227 /* Models */,
+				C7E08A6B2C38602700090227 /* Accessesory View */,
+				C7E08A692C385FC000090227 /* Extentions */,
 				C75160092C0DF17300F4392F /* Assets.xcassets */,
 				C751600B2C0DF17300F4392F /* Preview Content */,
 			);
@@ -133,6 +138,7 @@
 				C751600C2C0DF17300F4392F /* Preview Assets.xcassets */,
 				C7E851AA2C0EDFF4004BA873 /* BookSamples.swift */,
 				C7E851AC2C0EE158004BA873 /* PreviewContainer.swift */,
+				C7E08A652C385E4E00090227 /* GenereSamples.swift */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -152,6 +158,52 @@
 				C75160222C0DF17300F4392F /* swift_dataUITestsLaunchTests.swift */,
 			);
 			path = "swift-dataUITests";
+			sourceTree = "<group>";
+		};
+		C7E08A672C385F9600090227 /* Book */ = {
+			isa = PBXGroup;
+			children = (
+				C75160072C0DF17100F4392F /* BookListView.swift */,
+				C75714EA2C0EF3A8000CB56A /* BookList.swift */,
+				C7D31C272C0E019000AB5F5E /* EditBookView.swift */,
+				C75160312C0DF64100F4392F /* NewBookView.swift */,
+			);
+			path = Book;
+			sourceTree = "<group>";
+		};
+		C7E08A682C385FB200090227 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C7BB0BBF2C346C6300E04801 /* Quote.swift */,
+				C751602F2C0DF28100F4392F /* Book.swift */,
+				C7BB0BC32C370F4600E04801 /* Genre.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C7E08A692C385FC000090227 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				C7BB0BC52C37101900E04801 /* UIColor+Extention.swift */,
+				C7BB0BC72C37106D00E04801 /* Color+Extention.swift */,
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		C7E08A6A2C385FFE00090227 /* Quote */ = {
+			isa = PBXGroup;
+			children = (
+				C7BB0BC12C35AE3D00E04801 /* QuotesListView.swift */,
+			);
+			path = Quote;
+			sourceTree = "<group>";
+		};
+		C7E08A6B2C38602700090227 /* Accessesory View */ = {
+			isa = PBXGroup;
+			children = (
+				C7D31C292C0E060500AB5F5E /* RatingsView.swift */,
+			);
+			path = "Accessesory View";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,12 +338,16 @@
 			files = (
 				C7E851AB2C0EDFF4004BA873 /* BookSamples.swift in Sources */,
 				C75160322C0DF64100F4392F /* NewBookView.swift in Sources */,
+				C7BB0BC82C37106D00E04801 /* Color+Extention.swift in Sources */,
 				C7D31C2A2C0E060500AB5F5E /* RatingsView.swift in Sources */,
+				C7BB0BC42C370F4600E04801 /* Genre.swift in Sources */,
+				C7E08A662C385E4E00090227 /* GenereSamples.swift in Sources */,
 				C75714EB2C0EF3A8000CB56A /* BookList.swift in Sources */,
 				C7D31C282C0E019000AB5F5E /* EditBookView.swift in Sources */,
 				C75160082C0DF17100F4392F /* BookListView.swift in Sources */,
 				C75160062C0DF17100F4392F /* swift_dataApp.swift in Sources */,
 				C7E851AD2C0EE158004BA873 /* PreviewContainer.swift in Sources */,
+				C7BB0BC62C37101900E04801 /* UIColor+Extention.swift in Sources */,
 				C7BB0BC02C346C6300E04801 /* Quote.swift in Sources */,
 				C75160302C0DF28100F4392F /* Book.swift in Sources */,
 				C7BB0BC22C35AE3D00E04801 /* QuotesListView.swift in Sources */,
@@ -455,9 +511,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"swift-data/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -465,6 +523,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -472,6 +531,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nitpa.swift-data";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -483,9 +543,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"swift-data/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -493,6 +555,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -500,6 +563,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nitpa.swift-data";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
