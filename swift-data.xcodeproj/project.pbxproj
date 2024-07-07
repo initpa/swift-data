@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C74433422C3ADA100092016E /* GenreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74433412C3ADA100092016E /* GenreView.swift */; };
 		C75160062C0DF17100F4392F /* swift_dataApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75160052C0DF17100F4392F /* swift_dataApp.swift */; };
 		C75160082C0DF17100F4392F /* BookListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75160072C0DF17100F4392F /* BookListView.swift */; };
 		C751600A2C0DF17300F4392F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C75160092C0DF17300F4392F /* Assets.xcassets */; };
@@ -47,6 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C74433412C3ADA100092016E /* GenreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreView.swift; sourceTree = "<group>"; };
 		C75160022C0DF17100F4392F /* swift-data.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift-data.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C75160052C0DF17100F4392F /* swift_dataApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift_dataApp.swift; sourceTree = "<group>"; };
 		C75160072C0DF17100F4392F /* BookListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListView.swift; sourceTree = "<group>"; };
@@ -97,6 +99,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C74433402C3AD9FA0092016E /* Genre */ = {
+			isa = PBXGroup;
+			children = (
+				C74433412C3ADA100092016E /* GenreView.swift */,
+			);
+			path = Genre;
+			sourceTree = "<group>";
+		};
 		C7515FF92C0DF17100F4392F = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +134,7 @@
 				C7E08A6A2C385FFE00090227 /* Quote */,
 				C7E08A672C385F9600090227 /* Book */,
 				C7E08A682C385FB200090227 /* Models */,
+				C74433402C3AD9FA0092016E /* Genre */,
 				C7E08A6B2C38602700090227 /* Accessesory View */,
 				C7E08A692C385FC000090227 /* Extentions */,
 				C75160092C0DF17300F4392F /* Assets.xcassets */,
@@ -342,6 +353,7 @@
 				C7D31C2A2C0E060500AB5F5E /* RatingsView.swift in Sources */,
 				C7BB0BC42C370F4600E04801 /* Genre.swift in Sources */,
 				C7E08A662C385E4E00090227 /* GenereSamples.swift in Sources */,
+				C74433422C3ADA100092016E /* GenreView.swift in Sources */,
 				C75714EB2C0EF3A8000CB56A /* BookList.swift in Sources */,
 				C7D31C282C0E019000AB5F5E /* EditBookView.swift in Sources */,
 				C75160082C0DF17100F4392F /* BookListView.swift in Sources */,
