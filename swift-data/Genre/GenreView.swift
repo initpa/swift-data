@@ -13,6 +13,7 @@ struct GenreView: View {
     @Environment(\.modelContext) private var context
     @Bindable var book: Book
     @Query(sort: \Genre.name) var genres: [Genre]
+    @State private var newGenre = false
     
     
     var body: some View {
@@ -26,7 +27,7 @@ struct GenreView: View {
                         Text("You need to create some genres")
                     } actions: {
                         Button("Create Genre") {
-                            
+                            newGenre.toggle()
                         }
                         .buttonStyle(.borderedProminent)
                     }
@@ -54,10 +55,28 @@ struct GenreView: View {
                                 Text(genre.name)
                             }
                         }
+                        
+                        LabeledContent {
+                            Button {
+                                newGenre.toggle()
+                            } label: {
+                                Image(systemName: "plus.circle.fill")
+                                    .imageScale(.large)
+                            }
+                            .buttonStyle(.borderedProminent)
+                        } label: {
+                            Text("Create new genre")
+                                .font(.caption).foregroundStyle(.secondary)
+                        }
                     }
+                    .listStyle(.plain)
                 }
             }
             .navigationTitle(book.title)
+            .sheet(isPresented: $newGenre) {
+                NewGenreView()
+            }
+            
         }
     }
     
