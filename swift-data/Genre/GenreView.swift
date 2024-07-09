@@ -76,6 +76,13 @@ struct GenreView: View {
             .sheet(isPresented: $newGenre) {
                 NewGenreView()
             }
+            .toolbar {
+                ToolbarItem(placement: .topBarLeading) {
+                    Button("Back") {
+                        dismiss()
+                    }
+                }
+            }
             
         }
     }

@@ -21,6 +21,7 @@ struct EditBookView: View {
     @State private var dateCompleted = Date.distantPast
     @State private var firstView = true
     @State private var recommendedBy = ""
+    @State private var showGenres = false
     
     
     var body: some View {
@@ -105,9 +106,19 @@ struct EditBookView: View {
             TextEditor(text: $synopsis)
                 .padding(5)
                 .overlay(RoundedRectangle(cornerRadius: 20).stroke(Color(uiColor: .tertiarySystemFill), lineWidth: 2))
-            NavigationLink(destination: QuotesListView(book: book)) {
-                let count = book.quotes?.count ?? 0
-                Label("\(count) Quotes", systemImage: "quotes.opening")
+            
+            HStack {
+                Button("Genres", systemImage: "bookmark.fill") {
+                    showGenres.toggle()
+                }
+                .sheet(isPresented: $showGenres, content: {
+                    GenreView(book: book)
+                })
+                NavigationLink(destination: QuotesListView(book: book)) {
+                    let count = book.quotes?.count ?? 0
+                    Label("\(count) Quotes", systemImage: "quotes.opening")
+                }
+                
             }
             .buttonStyle(.bordered)
             .frame(maxWidth: .infinity, alignment: .trailing)
