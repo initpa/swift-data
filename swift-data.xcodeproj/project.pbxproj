@@ -29,6 +29,7 @@
 		C7E851AB2C0EDFF4004BA873 /* BookSamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E851AA2C0EDFF4004BA873 /* BookSamples.swift */; };
 		C7E851AD2C0EE158004BA873 /* PreviewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E851AC2C0EE158004BA873 /* PreviewContainer.swift */; };
 		C7EB23C12C3C4EAC0038887F /* NewGenreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EB23C02C3C4EAC0038887F /* NewGenreView.swift */; };
+		C7EB24032C3D70500038887F /* GenresStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EB24022C3D70500038887F /* GenresStackView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		C7E851AA2C0EDFF4004BA873 /* BookSamples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSamples.swift; sourceTree = "<group>"; };
 		C7E851AC2C0EE158004BA873 /* PreviewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewContainer.swift; sourceTree = "<group>"; };
 		C7EB23C02C3C4EAC0038887F /* NewGenreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGenreView.swift; sourceTree = "<group>"; };
+		C7EB24022C3D70500038887F /* GenresStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenresStackView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 			children = (
 				C74433412C3ADA100092016E /* GenreView.swift */,
 				C7EB23C02C3C4EAC0038887F /* NewGenreView.swift */,
+				C7EB24022C3D70500038887F /* GenresStackView.swift */,
 			);
 			path = Genre;
 			sourceTree = "<group>";
@@ -357,6 +360,7 @@
 				C7D31C2A2C0E060500AB5F5E /* RatingsView.swift in Sources */,
 				C7BB0BC42C370F4600E04801 /* Genre.swift in Sources */,
 				C7E08A662C385E4E00090227 /* GenereSamples.swift in Sources */,
+				C7EB24032C3D70500038887F /* GenresStackView.swift in Sources */,
 				C74433422C3ADA100092016E /* GenreView.swift in Sources */,
 				C75714EB2C0EF3A8000CB56A /* BookList.swift in Sources */,
 				C7D31C282C0E019000AB5F5E /* EditBookView.swift in Sources */,
