@@ -30,6 +30,7 @@
 		C7E851AD2C0EE158004BA873 /* PreviewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E851AC2C0EE158004BA873 /* PreviewContainer.swift */; };
 		C7EB23C12C3C4EAC0038887F /* NewGenreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EB23C02C3C4EAC0038887F /* NewGenreView.swift */; };
 		C7EB24032C3D70500038887F /* GenresStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EB24022C3D70500038887F /* GenresStackView.swift */; };
+		C7EB24052C3EA3EA0038887F /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = C7EB24042C3EA3EA0038887F /* Localizable.xcstrings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,7 @@
 		C7E851AC2C0EE158004BA873 /* PreviewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewContainer.swift; sourceTree = "<group>"; };
 		C7EB23C02C3C4EAC0038887F /* NewGenreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGenreView.swift; sourceTree = "<group>"; };
 		C7EB24022C3D70500038887F /* GenresStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenresStackView.swift; sourceTree = "<group>"; };
+		C7EB24042C3EA3EA0038887F /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 		C7515FF92C0DF17100F4392F = {
 			isa = PBXGroup;
 			children = (
+				C7EB24042C3EA3EA0038887F /* Localizable.xcstrings */,
 				C75160042C0DF17100F4392F /* swift-data */,
 				C75160152C0DF17300F4392F /* swift-dataTests */,
 				C751601F2C0DF17300F4392F /* swift-dataUITests */,
@@ -309,6 +312,7 @@
 			knownRegions = (
 				en,
 				Base,
+				de,
 			);
 			mainGroup = C7515FF92C0DF17100F4392F;
 			productRefGroup = C75160032C0DF17100F4392F /* Products */;
@@ -329,6 +333,7 @@
 			files = (
 				C751600D2C0DF17300F4392F /* Preview Assets.xcassets in Resources */,
 				C751600A2C0DF17300F4392F /* Assets.xcassets in Resources */,
+				C7EB24052C3EA3EA0038887F /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
